@@ -26,7 +26,7 @@ jobs:
         submodules: recursive
 
     - name: Checkout userspace
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         path: users/${{ github.actor }}
         fetch-depth: 1

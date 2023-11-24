@@ -32,6 +32,9 @@ jobs:
         fetch-depth: 1
         persist-credentials: false
 
+    - name: Install qmk
+      run: python3 -m pip install qmk
+
     - name: Build firmware
       run: qmk compile "users/${{ github.actor }}/${{ matrix.file }}"
 
